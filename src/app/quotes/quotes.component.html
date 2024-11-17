@@ -1,0 +1,27 @@
+<div class="container" [style.background-color]="currentColor">
+    <div id="quote-box">
+
+        <div class="quotes">
+            <div id="text" [style.color]="currentColor">
+                {{ quote?.quote }}
+            </div>
+            <div id="author" [style.color]="currentColor">
+                - {{ quote?.author }}
+            </div>
+        </div>
+
+        <div class="buttons">
+            <div id="twitter">
+                <a href="twitter.com/intent/tweet" target="_blank"
+                    id="tweet-quote"
+                    [style.color]="currentColor">
+                    tweet
+                </a>
+            </div>
+            <div id="new-quote">
+                <button (click)="getNewQuote()" [style.background-color]="currentColor">New Quote</button>
+            </div>
+        </div>
+
+    </div>
+</div>
